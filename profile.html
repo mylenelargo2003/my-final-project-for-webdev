@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone - Final</title>
+    <link rel="stylesheet" href="profile.css" />
+<!--     <link rel="stylesheet" href="profile2.css" /> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"/>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <a href="index.html" class="a-icons"><h2>Home</h2></a>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <a href="notifications.html" class="a-icons"><h2>Notifications</h2></a>
+       
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <a href="bookmark.html" class="a-icons"><h2>Bookmarks</h2></a>
+   
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <a href="profile.html" class="a-icons"><h2>Profile</h2></a>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <a href="login.html" class="a-icons"><h2>Logout</h2></a>
+        
+      </div>
+      <button class="sidebar__tweet">Tweet</button>
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts -->
+    <div class="feed">
+      <div class="feed__header">
+        <h2>Profile</h2>
+      </div>
+
+      <!-- tweetbox starts -->
+      <div class="tweetBox">
+        <button class="edit-profile">Edit Profile</button>
+        <div class="profileBox">
+          <img src="greeey.jpg" class="profile-background">
+          <img
+          src="tao-with-face.png"
+          alt="" class="profile-picture">
+
+          <h3 class="profile-name"> Mylene Largo Paderna<span class="material-icons post__badge"> verified </span></h3>
+          <span class="profile-handle">@mylene</span>
+          <p class="profile-following"><span class="following-text">1</span>	&nbsp;Following</p>
+          <p class="profile-followers"><span class="follower-text">70</span>	&nbsp;Followers</p>
+          </div>
+          <!-- <ul class="ul-flex">
+            <li><a href="#">Post</a></li>
+            <li><a href="#">Replies</a></li>
+            <li><a href="#">Highlights</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Likes</a></li>
+          </ul> -->
+          <nav class="bottom-navbar">
+            <ul class="bottom-navbar__list-items">
+              <span class="bottom-navbar__indicator"></span>
+              <li class="bottom-navbar__item active">
+                <a href="profile.html" class="bottom-navbar__link">
+                  <!-- <i class="fa-solid fa-house"></i> -->
+                  <h3 class="slide-text" id="redirectButton" >Post</h3>
+                </a>
+              </li>
+              <li class="bottom-navbar__item">
+                <a href="#" class="bottom-navbar__link">
+                  <!-- <i class="fa-solid fa-truck-fast"></i> -->
+                  <p class="slide-text" id="redirectButton">Replies</p>
+                </a>
+              </li>
+              <li class="bottom-navbar__item">
+                <a class="bottom-navbar__link" href="#">
+                  <!-- <i class="fa-solid fa-arrow-up-from-bracket"></i> -->
+                  <p class="slide-text">Highlights</p>
+                </a>
+              </li>
+              <li class="bottom-navbar__item">
+                <a class="bottom-navbar__link" href="#">
+                  <!-- <i class="fa-solid fa-folder-open"></i> -->
+                  <p class="slide-text" id="media-text">Media</p>
+                </a>
+              </li>
+              <li class="bottom-navbar__item">
+                <a class="bottom-navbar__link" href="#">
+                  <!-- <i class="fa-solid fa-user"></i> -->
+                  <p class="slide-text" id="like-text">Likes</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      
+      <!-- tweetbox ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="tao-with-face.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Mylene Largo Paderna
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@mylene</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Look at me guys</p>
+            </div>
+          </div>
+          <img
+            src="tao-with-face.png"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="tao-with-face.png"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Mylene Largo Paderna
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@mylene</span>
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>huhu</p>
+            </div>
+          </div>
+          <img
+            src="kkkkk.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <div id="post-feed">
+
+      </div>
+      <!-- <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+            alt=""
+          /><div ></div>
+        </div>
+      </div> -->
+      <!-- post ends -->
+    </div>
+
+    <!-- feed ends -->
+
+    <!-- widgets starts -->
+    <div class="widgets">
+      <div class="widgets__input">
+        <span class="material-icons widgets__searchIcon"> search </span>
+        <input type="text" placeholder="Search Twitter" />
+      </div>
+
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Sunsets don&#39;t get much better than this one over
+            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
+            <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#nature</a
+            >
+            <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#sunset</a
+            >
+            <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
+          </p>
+          &mdash; US Department of the Interior (@Interior)
+          <a href="https://twitter.com/dantdm/status/1733959405333307611"
+            >May 5, 2014</a
+          >
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="widgets__widgetContainer">
+        <h2>What's happening?</h2>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Sunsets don&#39;t get much better than this one over
+            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
+            <a href="https://twitter.com/dantdm/status/1733959405333307611"
+              >#nature</a
+            >
+            <a href="https://twitter.com/Jefinafita17/status/1003300766264823811"
+              >#sunset</a
+            >
+            <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
+          </p>
+          &mdash; US Department of the Interior (@Interior)
+          <a href="https://twitter.com/Jefinafita17/status/1003300766264823811"
+            >May 5, 2014</a
+          >
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+    
+    <!-- widgets ends -->
+    <script src="profile.js"></script>
+
+
+    <script>
+      document.getElementById("redirectButton").addEventListener("click", function() {
+    // Replace 'https://example.com' with the URL you want to redirect to
+    window.location.replace = "http://127.0.0.1:5500/twitter-clone/replies.html";
+});
+    </script>
+  </body>
+
+</html>
